@@ -1,0 +1,52 @@
+<view>
+  <view>
+    <swiper class="Swiper" indicator-dots="ture" indicator-active-color="gold" autoplay="ture" interval="2000" circular="ture">
+      <swiper-item>
+        <view class="Swiper_content">
+          <view class="Swiper_lable">558888</view>
+          <view class="Swiper_text">
+            三分钟数学：为什么我们要学数学？
+          </view>
+          <image class="Swiper_image" src='../img/math1.jpg'></image>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class="Swiper_content">
+          <view class="Swiper_lable">558888</view>
+          <view class="Swiper_text">
+            555
+          </view>
+          <image class="Swiper_image" src='../img/math1.jpg'></image>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class="Swiper_content">
+          <view class="Swiper_lable">558888</view>
+          <view class="Swiper_text">
+            555
+          </view>
+          <image class="Swiper_image" src='../img/math1.jpg'></image>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class="Swiper_content">
+          <view class="Swiper_lable">558888</view>
+          <view class="Swiper_text">
+            555
+          </view>
+          <image class="Swiper_image" src='../img/math1.jpg'></image>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="Content_title">
+    <text>
+    <image src="=''"></image> 个人定制</text>
+    <text>精品课程</text>
+  </view>
+  <view>
+
+  </view>
+
+
+</view>

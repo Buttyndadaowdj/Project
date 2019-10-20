@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/kinds/kinds",
+    "pages/mine/mine",
+    "pages/test/test"
+  ],
+  "tabBar": {
+    "selectedColor": "#FF0000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "assets/home.png",
+        "selectedIconPath": "assets/home-s.png"
+      },
+      {
+        "pagePath": "pages/test/test",
+        "text": "测评",
+        "iconPath": "assets/kinds.png",
+        "selectedIconPath": "assets/kinds-s.png"
+      },
+      {
+        "pagePath": "pages/kinds/kinds",
+        "text": "更多服务",
+        "iconPath": "assets/search.png",
+        "selectedIconPath": "assets/search-s.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "个人中心",
+        "iconPath": "assets/mine.png",
+        "selectedIconPath": "assets/mine-s.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "留学圈",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}
