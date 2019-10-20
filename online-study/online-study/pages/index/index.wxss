@@ -1,41 +1,175 @@
 /* pages/index/index.wxss */
 
-.Swiper{
+/* 轮播图部分*/
+
+.Swiper {
   position: relative;
 }
-.Swiper_image{
+
+.Swiper_image {
   width: 100%;
 }
-.Swiper_content{
+
+.Swiper_content {
   position: relative;
   width: 100%;
   height: 400rpx;
 }
-.Swiper_text{
+
+.Swiper_text {
   position: absolute;
   left: 40rpx;
   bottom: 100rpx;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 40rpx;
- 
   width: 90%;
-  height: 100rpx;
-  background-color: gainsboro;
+  /* height: 100rpx; *//* background-color: rgba(114, 114, 114, 0.712); */
 }
-.Swiper_lable{
+
+.Swiper_lable {
   position: absolute;
   right: 20rpx;
-  font-size: 20rpx;
-  color: black;
-  border-radius: 5rpx;
+  font-size: 25rpx;
+  color: rgb(240, 240, 240);
+  border-radius: 7rpx;
   top: 30rpx;
-  width: 80rpx;
+  padding: 0 10rpx;
   height: 30rpx;
-  background-color: red;
+  background-color: #ffa400;
 }
-.Content_title{
+
+.Swiper_lable_img {
+  width: 25rpx;
+  height: 25rpx;
+}
+
+.main_Content {
+  margin: 20rpx 30rpx 0 30rpx;
+}
+
+/*中间标题部分*/
+
+.Content_title,
+.Subject {
   width: 100%;
   height: 100rpx;
   font-size: 30rpx;
-  background: red;
+  /* background: red; */
+  position: relative;
+}
+
+.Content_title .Information {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-weight: bold;
+}
+
+.Letter {
+  position: absolute;
+  top: 5rpx;
+  right: 120rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.Content_title .Recommend,
+.Subject text:nth-child(1) {
+  position: absolute;
+  bottom: 0;
+  font-size: 40rpx;
+  font-weight: bold;
+}
+
+.Content_title .quality_Course,
+.Subject text:nth-child(2) {
+  position: absolute;
+  color: rgb(185, 185, 185);
+  font-weight: bold;
+  bottom: 0;
+  font-size: 40rpx;
+  left: 170rpx;
+}
+
+/*视频列表部分*/
+
+.Video_List {
+  position: relative;
+  margin-top: 20rpx;
+  width: 100%;
+  height: 250rpx;
+  display: flex;
+  background-color: rgba(238, 237, 237, 0.329);
+}
+
+.Video_Cover {
+  
+  margin-right: 40rpx;
+}
+
+.Video_Cover image {
+  width: 250rpx;
+  height: 250rpx;
+  border-radius: 20rpx;
+}
+
+.Video_title {
+  font-weight: bold;
+  margin-top: 10rpx;
+}
+
+.Video_Grading {
+  font-size: 30rpx;
+  margin-top: 10rpx;
+  color: rgba(238, 224, 29, 0.952);
+}
+
+.Video_Price text:nth-child(1) {
+  font-size: 30rpx;
+  text-decoration: line-through;
+  color: rgb(194, 173, 173);
+}
+
+.Video_Price text:nth-child(2) {
+  color: red;
+}
+
+.Video_Botton {
+  font-size: 25rpx;
+  margin-top: 20rpx;
+  width: 150rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  border-radius: 25rpx;
+  background-color: rgb(164, 255, 164);
+}
+
+.Video_Botton image {
+  width: 25rpx;
+  height: 25rpx;
+}
+
+.Video_lable {
+  position: absolute;
+  bottom: 10rpx;
+  left: 10rpx;
+  font-size: 25rpx;
+  color: white;
+  background-color: #ffa400;
+}
+.Classification{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+.Classification view{
+  background-color: rgba(214, 214, 214, 0.486);
+  margin-top: 20rpx;
+  width: 200rpx;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30rpx;
 }

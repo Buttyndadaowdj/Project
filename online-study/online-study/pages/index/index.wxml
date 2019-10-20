@@ -1,51 +1,62 @@
 <view>
   <view>
     <swiper class="Swiper" indicator-dots="ture" indicator-active-color="gold" autoplay="ture" interval="2000" circular="ture">
-      <swiper-item>
+      <swiper-item wx:for="{{swiper}}" wx:key="index" data-theKey="{{swiper.index}}" wx:for-item="swiper" bindtap="swiper_click">
         <view class="Swiper_content">
-          <view class="Swiper_lable">558888</view>
-          <view class="Swiper_text">
-            三分钟数学：为什么我们要学数学？
+          <view class="Swiper_lable">
+            <image class="Swiper_lable_img" src="{{swiper.iconfont}}"></image>
+            {{swiper.lable}}
           </view>
-          <image class="Swiper_image" src='../img/math1.jpg'></image>
+          <view class="Swiper_text">
+            {{swiper.words}}
+          </view>
+          <image class="Swiper_image" src='{{swiper.mainimg_src}}'></image>
         </view>
       </swiper-item>
-      <swiper-item>
-        <view class="Swiper_content">
-          <view class="Swiper_lable">558888</view>
-          <view class="Swiper_text">
-            555
-          </view>
-          <image class="Swiper_image" src='../img/math1.jpg'></image>
-        </view>
-      </swiper-item>
-      <swiper-item>
-        <view class="Swiper_content">
-          <view class="Swiper_lable">558888</view>
-          <view class="Swiper_text">
-            555
-          </view>
-          <image class="Swiper_image" src='../img/math1.jpg'></image>
-        </view>
-      </swiper-item>
-      <swiper-item>
-        <view class="Swiper_content">
-          <view class="Swiper_lable">558888</view>
-          <view class="Swiper_text">
-            555
-          </view>
-          <image class="Swiper_image" src='../img/math1.jpg'></image>
-        </view>
-      </swiper-item>
+
     </swiper>
   </view>
-  <view class="Content_title">
-    <text>
-    <image src="=''"></image> 个人定制</text>
-    <text>精品课程</text>
-  </view>
-  <view>
 
+  <view class="main_Content">
+    <view class="Content_title">
+      <image class="Letter" src="../img/letter.png"></image>
+      <text class="Information" bindtap="information">订阅消息</text>
+      <text class="Recommend">精品课程</text>
+      <text class="quality_Course">Quality Course</text>
+    </view>
+
+    <view class="Video_List" wx:for="{{video}}" wx:key='index' wx:for-item="video">
+      <view class="Video_Cover">
+        <image src="{{video.image}}"></image>
+      </view>
+      <view class="Video_infor">
+        <view class="Video_title">
+          {{video.title}}
+        </view>
+        <view class="Video_Grading">
+          {{video.grading}}
+        </view>
+        <view class="Video_Price">
+          <text>￥{{video.price1}}</text>
+          <text>￥{{video.price2}}</text>
+        </view>
+        <view class="Video_Botton">
+          <image src="../img/watch.png"></image>
+          立即观看</view>
+      </view>
+      <view class="Video_lable">
+        {{video.lable}}
+      </view>
+    </view>
+    <view class="Subject">
+      <text class="">学科板块</text>
+      <text class="">Subject</text>
+    </view>
+    <view class="Classification">
+      <view wx:for="{{subject}}" wx:key="index" wx:for-item="subject" data-theKey="{{subject.index}}">
+        {{subject.word}}
+      </view>
+    </view>
   </view>
 
 
