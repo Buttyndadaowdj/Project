@@ -1,2 +1,25 @@
+<view class="content">
+  <view class="main_body">
+    <view class="title">
+      <view class="titleNav">
+        <image class="headImg" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=60977623,3173186263&fm=26&gp=0.jpg" style="height: 80rpx;width: 80rpx; border-radius:40rpx"></image>
+        <view class="mailTitle">社区小助手</view>
+      </view>
+      <view class="textTitle">
+        <view class="hottitle">[顶]</view>
+        <view>【话题讨论】出国留学最怕不知道怎么做？这里有你想要的</view>
+      </view>
+    </view>
+    <view class="commentNav">
+      <view class="comment"> 欢迎来到留学课堂，这里有最详细的留学攻略，点击即可查看。</view>
+      <view class="taglow">
+        <view>8-24更新</view>
+        <view class="taglow1">
+          <view>4评论</view>
+          <view>986浏览</view>
+        </view>
+      </view>
+    </view>
+  </view>
 
-
+</view>

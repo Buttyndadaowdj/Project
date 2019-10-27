@@ -1,2 +1,12 @@
-<!--pages/test/test.wxml-->
-<text>pages/test/test.wxml</text>
+<view class="begininfo">
+  <view class='ep'>
+    <text>
+    本套测试题为综合测试题，包含以下模块：
+    1、高等数学
+    2、ACT历届真题
+    3、概率论与数理统计
+    4、常春藤高校模拟考试题
+    </text>
+  </view>
+  <button bindtap='beginAnswer'> 开始测试 </button>
+</view>

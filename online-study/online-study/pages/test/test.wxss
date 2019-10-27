@@ -1,1 +1,23 @@
-/* pages/test/test.wxss */
+page {
+  background: url('https://p.ananas.chaoxing.com/star/1024_0/1384741311656yqxml.jpg');
+  background-size: cover;
+  z-index: 0;
+  position: relative;
+}
+.begininfo {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(216, 214, 214, 0.603);
+}
+
+.ep {
+  margin-bottom: 150rpx;
+  font-size: 50rpx;
+  font-weight: bold;
+  margin: 0 50rpx;
+}

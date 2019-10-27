@@ -4,7 +4,6 @@ Page({
    * 页面的初始数据
    */
   data: {
-    well: 0,
     Video_list: [{
       idnex: 1,
       title: "为什么我们要学数学",
@@ -40,23 +39,37 @@ Page({
       }]
     }, {
       idnex: 4,
-      title: "留学数学的难点",
-      comment: "四川轻化工大学名师🐟🕊🕊为你讲解，数学在我们生活中的重要性，三分钟的时间让你对数学不再陌生。",
+      title: "名师讲解ACT数学",
+      comment: "四川轻化工大学名师🐟🕊🕊为你讲解ACT数学，秒懂有木有？",
       list: [{
         index: 1,
-        title: "第一节：什么是数学"
+        title: "第一节：ACT数学（1）"
       }, {
         index: 2,
-        title: "第二节：生活中的数学"
+        title: "第二节：ACT数学（2）"
+      }, {
+        index: 3,
+        title: "第三节：ACT数学（3）"
+      }]
+    }, {
+      idnex: 5,
+      title: "历届ACT数学讲解",
+      comment: "四川轻化工大学名师🐟🕊🕊为你讲解理解ACT数学试卷，重难点立体化剖析",
+      list: [{
+        index: 1,
+        title: "第一节：2016年ACT真题讲解"
+      }, {
+        index: 2,
+        title: "第二节：2017年ACT真题讲解"
+      }, {
+        index: 3,
+        title: "第三节：2018年ACT真题讲解"
       }]
     }, ],
-    Need_show:[]
+    Need_show: []
   },
-  think_Like: function() {
-    this.data.well = this.data.well + 1;
-    this.setData({
-      well: this.data.well
-    })
+  think_Like: function(e) {
+    console.log(e)
   },
   /**
    * 生命周期函数--监听页面加载
@@ -69,10 +82,12 @@ Page({
     };
     arr = arr[0] - 1;
     let need_show = this.data.Video_list[arr];
+
+    console.log(need_show);
     this.setData({
       Need_show: need_show
     })
-    console.log(this.data.Need_show)
+    // console.log(this.data.Need_show)
   },
 
   /**

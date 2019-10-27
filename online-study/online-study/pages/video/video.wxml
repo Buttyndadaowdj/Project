@@ -1,20 +1,25 @@
-<view class="all" wx:for="{{Need_show}}" wx:key="index" wx:for-item="show">
+<view class="all">
   <video class="Video_window">
   </video>
   <view class="Video_title">
-    {{show.title}}
+    {{Need_show.title}}
   </view>
   <view class="Video_comments">
-    {{show.comment}}
+    {{Need_show.comment}}
   </view>
   <view class="Class_list">
     <view class="The_title">课程列表</view>
     <view class="The_list">
-      <view wx:for="{{show.list}}" wx:key="index" wx:for-item="theList">{{theList.title}}</view>
+      <view wx:for="{{Need_show.list}}" wx:key="index" wx:for-item="theList">{{theList.title}}</view>
 
     </view>
   </view>
-  <view>
-    <button bindtap="think_Like">{{well}}</button>
+  <view class="theButton">
+    <button bindtap="think_Like">
+      点赞</button>
+    <button bindtap="">
+      投币</button>
+    <button bindtap="">
+      收藏</button>
   </view>
 </view>

@@ -1,2 +1,15 @@
-<!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<view class="app">
+  <view class="login">
+    <view class="headImg">
+      <image src="{{headImg}}"></image>
+    </view>
+    <button class="yonghudenglu" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">
+      {{buttonWord}}
+    </button>
+  </view>
+  <view class="record">
+    <view class="history">我的课程</view>
+    <view class="more" bindtap="outLogin">退出登录</view>
+  </view>
+  <view class="feedBack">意见反馈</view>
+</view>

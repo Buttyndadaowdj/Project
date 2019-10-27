@@ -1,13 +1,41 @@
-// pages/information/information.js
+// pages/kinds/kinds.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    currentData: 0,
+    height: '500',
+    indexSelect: 0,
+    topics: [{
+      id: 0,
+      title: "社区文章"
+    }, {
+      id: 1,
+      title: "就业答疑"
+    }, {
+      id: 2,
+      title: "咨询达人"
+    }]
+  ,
   },
-
+  clickTopItem: function (res) {
+    //获得传递过来的数据
+    const that = this;
+    let id = res.currentTarget.dataset.id;
+    //把index换成id
+    this.setData({
+      indexSelect: id
+    });
+    if (that.data.currentData === id) {
+      return false;
+    } else {
+      that.setData({
+        currentData: id
+      })
+    }
+  }, 
   /**
    * 生命周期函数--监听页面加载
    */

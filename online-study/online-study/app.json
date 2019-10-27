@@ -1,12 +1,13 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/page/page",
-    "pages/video/video",
-    "pages/kinds/kinds",
-    "pages/mine/mine",
     "pages/test/test",
-    "pages/information/information"
+    "pages/paper/paper",
+    "pages/information/information",
+    "pages/mine/mine",
+    "pages/video/video",
+    "pages/page/page",
+    "pages/kinds/kinds"
   ],
   "tabBar": {
     "selectedColor": "#FF0000",

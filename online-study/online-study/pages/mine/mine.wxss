@@ -1,1 +1,55 @@
-/* pages/mine/mine.wxss */
+.login {
+  padding-bottom: 10rpx;
+  border-bottom: 1px solid #b4b3b3;
+}
+
+.headImg {
+  display: flex;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 50rpx;
+  margin-bottom: 20rpx;
+}
+
+.headImg image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.login button {
+  background-color: rgba(245, 205, 27, 0.89);
+  min-width: 200rpx;
+  max-width: 300rpx;
+  color: white;
+}
+
+.record {
+  padding: 0 30rpx;
+  display: flex;
+  height: 100rpx;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #b4b3b3;
+}
+
+.record .more {
+  color: #b4b3b3;
+  font-size: 24rpx;
+}
+
+.feedBack {
+  padding: 0 30rpx;
+  display: flex;
+  height: 100rpx;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #b4b3b3;
+}
+
+.yonghudenglu {
+  min-width: 200rpx;
+  font-size: 30rpx;
+}

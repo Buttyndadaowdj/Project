@@ -10,7 +10,7 @@
           <view class="Swiper_text">
             {{swiper.words}}
           </view>
-          <image class="Swiper_image" src='{{swiper.mainimg_src}}'></image>
+          <image class="Swiper_image" src='{{swiper.mainImg_src}}'></image>
         </view>
       </swiper-item>
 
@@ -40,7 +40,7 @@
           <text>￥{{video.price1}}</text>
           <text>￥{{video.price2}}</text>
         </view>
-        <view class="Video_Botton">
+        <view class="Video_Botton" bindtap="toWatch" data-theKey="{{video.index}}">
           <image src="../img/watch.png"></image>
           立即观看</view>
       </view>
@@ -54,7 +54,7 @@
     </view>
     <view class="Classification">
       <view wx:for="{{subject}}" wx:key="index" wx:for-item="subject" data-theKey="{{subject.index}}">
-        {{subject.word}}
+        {{subject.subject}}
       </view>
     </view>
   </view>

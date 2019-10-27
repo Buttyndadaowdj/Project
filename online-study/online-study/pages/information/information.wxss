@@ -1,1 +1,85 @@
-/* pages/information/information.wxss */
+.content {
+  width: 700rpx;
+  margin: 0 20rpx;
+  background: #ffffff;
+}
+
+.main_body {
+  margin-bottom: 20rpx;
+  background-color: rgba(230, 230, 230, 0.226);
+  border-radius: 20rpx;
+}
+
+.titleNav {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 20rpx;
+  margin: 12rpx 20rpx;
+  font-size: 50rpx;
+}
+
+.titleNav .headImg {
+  margin-right: 20rpx;
+}
+
+.titleNav .mailTitle {
+  font-size: 40rpx;
+  font-weight: bold;
+}
+
+.Icon {
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 20rpx;
+}
+
+.hottitle {
+  margin-left: 20rpx;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: red;
+}
+
+.textTitle {
+  display: flex;
+  margin: 0 20rpx 20rpx 20rpx;
+  flex-direction: row;
+  position: relative;
+}
+
+.textTitle view:nth-child(2) {
+  text-indent: 2rem;
+}
+
+.commentNav {
+  color: #736f74;
+  font-size: 30rpx;
+  margin-left: 20rpx;
+}
+
+.commentNav .comment {
+  text-indent: 1.5rem;
+  height: 80rpx;
+  margin-bottom: 20rpx;
+  overflow: hidden;
+  /* background-color: red; */
+}
+
+.taglow {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20rpx;
+}
+
+.taglow1 {
+  display: flex;
+  width: 250rpx;
+  justify-content: space-between;
+  /* background-color: red; */
+}
+
+.taglow2 {
+  /* margin-left: 40rpx; */
+}
